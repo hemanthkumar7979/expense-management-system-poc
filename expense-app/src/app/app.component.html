@@ -1,5 +1,17 @@
 <div class="container-fluid">
-  <button class="btn btn-primary">Success</button>
+  <header>Expenseeve</header>
+  <section>
+    <aside>
+      <div class="navigation">
+        <ul>
+          <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="setting" routerLinkActive="active">Setting</a></li>
+          <li><a routerLink="profile" routerLinkActive="active">Profile</a></li>
+        </ul>
+      </div>
+    </aside>
+    <section class="right-section">
+      <router-outlet></router-outlet>
+    </section>
+  </section>
 </div>
-
-<router-outlet></router-outlet>
