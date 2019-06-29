@@ -5,6 +5,7 @@ import { SettingComponent } from './setting/setting.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
+  { path: 'home', redirectTo: 'home', pathMatch: 'full' },
   {path: 'home' ,  component: HomeComponent},
   {path: 'setting' , component: SettingComponent },
   {path: 'profile' , component: ProfileComponent}

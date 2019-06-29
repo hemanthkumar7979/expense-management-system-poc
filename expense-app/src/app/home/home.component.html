@@ -1,1 +1,71 @@
-<p>home works!</p>
+<div class="container-fluid expense-dashboard">
+  <div class="budget-overview">
+    <div class="overview">
+      <header>Budget Overview</header>
+      <div class="total-budget">
+        <div class="spent">
+          <div class="outer-circle">
+            <div class="inner-circle">
+              <label for="">80% Spent</label>
+            </div>
+          </div>
+        </div>
+        <div class="budget-facts">
+          <div class="t-budget">
+            <label for="">Total Budget</label>
+            <label for="">Rs 200000</label>
+          </div>
+          <div class="t-expenses">
+            <label for="">Total Expenses</label>
+            <label for="">Rs 120000</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="split">
+      <header>Category wise split</header>
+      <div class="category-split">
+        <div class="outer-circle">
+          <div class="inner-circle">
+            <label for="">Rs 120000</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="add-expense">
+    <button class="btn btn-secondary">Add Expense</button>
+  </div>
+  <div class="expense-table">
+    <!-- <table >
+      <thead>
+        <th>Category</th>
+        <th>Item name</th>
+        <th>Amount</th>
+        <th>Expense date</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let expense of expenselist">
+          <td>{{expense.caterory}}</td>
+          <td>{{expense.itemname}}</td>
+          <td>{{expense.amount}}</td>
+          <td>{{expense.expensedate}}</td>
+        </tr>
+      </tbody>
+    </table> -->
+    <div class="heading" >
+      <label for="">Category</label>
+      <label for="">Itemname</label>
+      <label for="">Amount</label>
+      <label for="">Expense date</label>
+    </div>
+    <div class="data" *ngFor="let expense of expenselist">
+      <div class="item" >
+        <label for="">{{expense.caterory}}</label>
+        <label for="">{{expense.itemname}}</label>
+        <label for="">{{expense.amount}}</label>
+        <label for="">{{expense.expensedate}}</label>
+      </div>
+    </div>
+  </div>
+</div>

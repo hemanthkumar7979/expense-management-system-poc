@@ -1,0 +1,215 @@
+.expense-dashboard {
+  width: 88vw;
+  height: 100%;
+  padding: 0;
+  margin-right: 2vw;
+  margin-left: 1vw;
+  display: flex;
+  flex-direction: column;
+
+  .budget-overview {
+    flex: 1 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .overview {
+      flex: 1 45%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      margin: 2vw 2vw 2vw 0vw;
+
+      header {
+        flex: 1 10%;
+        width: 100%;
+        padding-left: 0.5vw;
+        border-bottom: 1px solid #000;
+        background-color: aquamarine;
+      }
+
+      .total-budget {
+        flex: 1 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .spent {
+          flex: 1;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .outer-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            border: 1px solid #000;
+
+            .inner-circle {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 120px;
+              height: 120px;
+              border-radius: 60px;
+              border: 1px solid #000;
+
+              label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+
+        .budget-facts {
+          flex: 1;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .t-budget {
+            flex: 1;
+            width: 100%;
+
+            label {
+              display: block;
+              padding: 2px 2px;
+            }
+          }
+
+          .t-expenses {
+            flex: 1;
+            width: 100%;
+
+            label {
+              display: block;
+              padding: 2px 2px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .split {
+      flex: 1 45%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      margin: 2vw 0vw 2vw 2vw;
+
+      header {
+        flex: 1 10%;
+        width: 100%;
+        padding-left: 0.5vw;
+        border-bottom: 1px solid #000;
+        background-color: aquamarine;
+      }
+
+      .category-split {
+        flex: 1 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .outer-circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 140px;
+          height: 140px;
+          border-radius: 70px;
+          border: 1px solid #000;
+
+          .inner-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            border: 1px solid #000;
+
+            label {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .add-expense {
+    flex: 1 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0.2vw 0vw;
+  }
+
+  .expense-table {
+    flex: 1 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .heading {
+      flex: 1 7%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin: 0.7vw 0vw;
+      justify-content: center;
+      align-items: center;
+
+      label {
+        flex: 1;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+    }
+
+    .data {
+      flex: 1 60%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 1vw;
+
+      .item {
+        flex: 1;
+        width: 100%;
+        border: 1px solid #000;
+        display: flex;
+        flex-direction: row;
+
+        label {
+          flex: 1;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
