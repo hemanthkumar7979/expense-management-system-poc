@@ -1,0 +1,28 @@
+[
+    {"caterory": "Grocery",
+        "itemname": "Bread",
+        "amount": 40,
+        "expensedate": "23/04/2019"
+     },
+     {"caterory": "Costomits",
+        "itemname": "Cream",
+        "amount": 150,
+        "expensedate": "20/03/2019"
+     },
+     {"caterory": "Grocery",
+        "itemname": "Rice",
+        "amount": 500,
+        "expensedate": "02/03/2019"
+     },
+     {"caterory": "Grocery",
+        "itemname": "Atta",
+        "amount": 600,
+        "expensedate": "02/03/2019"
+     },
+     {"caterory": "Furniture",
+        "itemname": "Table",
+        "amount": 1000,
+        "expensedate": "21/01/2019"
+     }
+     
+]

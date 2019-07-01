@@ -1,8 +1,8 @@
 <div class="setting-container">
   <div class="update">
     <label for="">Total Budget</label>
-    <input type="text" placeholder="define budget" >
-    <button type="button" class="button">Update</button>
+    <input type="text" placeholder="define budget" [(ngModel)] = "budgetValue" #updatevalue >
+    <button type="button" class="button" (click)="budgetUpdate(updatevalue)">Update</button>
 
   </div>
   <div class="add">
@@ -12,11 +12,9 @@
   </div>
   <div class="items">
     <ul>
-      <li><a href="#">Item1</a> <img src="../../assets/images/delete-icon.png" alt="Delete icon" ></li>
-      <li><a href="#">Cosmotics</a> <img src="../../assets/images/delete-icon.png" alt="Delete icon"></li>
-      <li><a href="#">Item3</a> <img src="../../assets/images/delete-icon.png" alt="Delete icon"></li>
-      <li><a href="#">Item4</a> <img src="../../assets/images/delete-icon.png" alt="Delete icon"></li>
-      <li><a href="#">Item5</a> <img src="../../assets/images/delete-icon.png" alt="Delete icon"></li>
+      <li *ngFor="let item of itemsList">
+        <a href="#">{{item.item}}</a> <img src="../../assets/images/delete-icon.png" alt="Delete icon" >
+      </li>
     </ul>
   </div>
 </div>
